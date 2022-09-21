@@ -1,4 +1,10 @@
-export const theme = {
+import { extendTheme } from "@chakra-ui/react";
+
+export const theme = extendTheme({
+  fonts: {
+    body: "Lexend Deca, sans-serif",
+    heading: "Lexend Deca, sans-serif",
+  },
   colors: {
     white: "#FFFFFF",
     black: "#000000",
@@ -13,4 +19,4 @@ export const theme = {
       900: "#2B2B35",
     },
   },
-};
+});
