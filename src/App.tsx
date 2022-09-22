@@ -1,5 +1,6 @@
 import { Grid, GridItem } from "@chakra-ui/react";
 import { Appbar } from "./components/Appbar";
+import { Footer } from "./components/Footer";
 import { Main } from "./components/Main";
 import { Sidebar } from "./components/Sidebar";
 
@@ -12,14 +13,13 @@ export function App() {
       gridTemplateAreas={`
       'sidebar appbar appbar' 
       'sidebar main main' 
-      'sidebar footer footer'
+      'footer footer footer'
       `}
     >
       <Sidebar />
       <Appbar />
       <Main />
-
-      {/* <GridItem bg="yellow" area="footer"></GridItem> */}
+      <Footer />
     </Grid>
   );
 }

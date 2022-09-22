@@ -5,9 +5,6 @@ import {
   Flex,
   GridItem,
   Heading,
-  Image,
-  List,
-  ListItem,
   Text,
 } from "@chakra-ui/react";
 
@@ -24,7 +21,7 @@ export function Main() {
       justifyContent="space-between"
       pl={14}
       pr={20}
-      pt={100}
+      pt="80px"
     >
       <Flex direction="column" justify="space-between">
         <Flex direction="column" gap={42}>
