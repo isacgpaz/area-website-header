@@ -1,5 +1,6 @@
 import { Flex, GridItem, Text } from "@chakra-ui/react";
 import { CardSend, ShieldTick } from "iconsax-react";
+import { RightHighLight } from "./RightHighLight";
 
 export function Footer() {
   return (
@@ -11,6 +12,7 @@ export function Footer() {
       gap={119}
       bg="gray.900"
       px={20}
+      position="relative"
     >
       <Flex align="center" gap={5}>
         <ShieldTick size={60} color="white" variant="TwoTone" />
@@ -33,7 +35,6 @@ export function Footer() {
           </Text>
         </Flex>
       </Flex>
-
       <Flex align="center" gap={5}>
         <CardSend size={60} color="white" variant="TwoTone" />
 
@@ -55,6 +56,8 @@ export function Footer() {
           </Text>
         </Flex>
       </Flex>
+
+      <RightHighLight />
     </GridItem>
   );
 }
