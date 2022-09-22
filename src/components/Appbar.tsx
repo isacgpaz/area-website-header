@@ -9,7 +9,7 @@ export function Appbar() {
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      pl={14}
+      pl={16}
       pr={20}
     >
       <Image src={Logo} />

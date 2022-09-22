@@ -19,11 +19,12 @@ export function Main() {
       as="main"
       display="flex"
       justifyContent="space-between"
-      pl={14}
+      pl={16}
       pr={20}
-      pt="80px"
+      pt={28}
+      pb={55}
     >
-      <Flex direction="column" justify="space-between">
+      <Flex direction="column" gap={"80px"}>
         <Flex direction="column" gap={42}>
           <Heading
             fontSize={100}
@@ -49,7 +50,7 @@ export function Main() {
             Outdoor & Sporting Goods Company
           </Text>
 
-          <Flex direction="column" gap={4}>
+          <Flex direction="column" gap={"14px"}>
             <Button
               w="fit-content"
               bg="red"
@@ -74,7 +75,7 @@ export function Main() {
           </Flex>
         </Flex>
 
-        <Flex gap={94}>
+        <Flex gap={"94px"}>
           <Flex direction="column" textTransform="uppercase">
             <Text fontSize="sm" fontWeight={300}>
               More than
@@ -105,7 +106,7 @@ export function Main() {
         </Flex>
       </Flex>
 
-      <Flex direction="column" align="flex-end" gap={6}>
+      <Flex direction="column" gap={6}>
         <Text
           fontSize="xl"
           color="gray.500"
@@ -115,7 +116,7 @@ export function Main() {
           Adventurous Person
         </Text>
 
-        <AvatarGroup size="xl" max={3} fontSize="2xl" color="red">
+        <AvatarGroup size="lg" max={3} fontSize="2xl" color="red">
           <Avatar name="Ryan Florence" src={person1} />
           <Avatar name="Segun Adebayo" src={person2} />
           <Avatar name="Kent Dodds" src={person3} />
